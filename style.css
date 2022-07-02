@@ -29,6 +29,7 @@ h2{
     max-width: 600px;
     margin: 0 auto;
     margin-top: 20px;
+    margin-bottom: 10px;
     background-color: #ccc;
     padding: 0 2%;
 }
@@ -106,6 +107,7 @@ form p{
 .form input[type=submit]:hover{
     background-color:rgb(39, 39, 177);
     transition: 0.4s;
+    box-shadow: 1px 2px 1px 0 rgb(122, 122, 122);
 }
 
 .form h3{
@@ -113,6 +115,21 @@ form p{
     font-size: 17px;
     font-style: italic;
     font-weight: normal;
+}
+
+footer{
+   background: #212343;
+   color: white;
+    text-align: center;
+    border-top: 1px solid #212343;
+    font-size: 20px;
+    padding: 20px 0;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+footer span{
+    color: #f9004d;
 }
 
 @media screen and (max-width: 195px) {
