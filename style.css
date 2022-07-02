@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+html,body{
+    width: 100%;
+}
+
+body{
+    background: rgb(179, 179, 252);
+}
+
+h2{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 40px;
+    font-weight: 600;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #ccc;
+    padding: 0 2%;
+}
+
+form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 2%;
+    width: 100%;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.form label{
+    color: #212343;
+    padding: 10px 0;
+    font-size: 23px;
+}
+
+
+form p{
+    padding: 10px 0;
+    visibility: visible;
+    color: #DB5A5A;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.form input{
+    width: 100%;
+    height: 35px;
+    padding: 0 5px;
+    border: 0;
+}
+
+/* começa a formatação do input de sucesso e erro */
+
+.sucesso input{
+    position: relative;
+    width: 100%;
+    height: 35px;
+    padding: 0 5px;
+    border: 2px solid #4ECA64;
+}
+
+.erro input{
+    position: relative;
+    width: 100%;
+    height: 35px;
+    padding: 0 5px;
+    border: 2px solid #DB5A5A;
+}
+
+
+
+/* fim da formatação do input de sucesso e erro */
+
+.form textarea{
+    width: 100%;
+    height: 100px;
+    padding: 2px 5px;
+    resize: vertical;
+}
+
+.form input[type=submit]{
+    background-color: rgb(102, 102, 201);
+    border-radius: 15px;
+    cursor: pointer;
+    line-height: 20px;
+    color: white;
+}
+
+.form input[type=submit]:hover{
+    background-color:rgb(39, 39, 177);
+    transition: 0.4s;
+}
+
+.form h3{
+    margin-top: 10px;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 195px) {
+    .form{
+        width: 100%;
+        padding: 0 4%;
+        font-size: 20px;
+    }
+
+    h2{
+        display: inline-block;
+        width: 100%;
+    }
+
+    .form textarea{
+        width: 100%;
+
+    }
+
+    .form label{
+        width: 100%;
+    }
+    
+}
